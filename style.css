@@ -310,3 +310,112 @@ footer { background: var(--primary-color); color: white; text-align: center; pad
     color: #b71c1c;
     padding-left: 5px; /* Hiệu ứng chạy sang phải */
 }
+/* ====================================================== */
+/* === HIỆU ỨNG PHÁT SÁNG VÀNG KIM (GOLD GLOW THEME) === */
+/* ====================================================== */
+
+/* 1. KHUNG ẢNH BÌA (HERO FRAME) */
+.hero-frame {
+    /* Viền vàng đậm và phát sáng */
+    border: 2px solid #FFD700 !important;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6), inset 0 0 20px rgba(255, 215, 0, 0.2);
+    background: rgba(0, 0, 0, 0.7) !important; /* Nền đen mờ để chữ nổi */
+}
+
+.hero h1 {
+    color: #FFD700 !important; /* Chữ tiêu đề màu vàng kim */
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* Chữ tỏa sáng */
+}
+
+.hero .top-caption, 
+.hero .sub-caption,
+.hero .ornament {
+    color: #fffacd !important; /* Màu vàng kem nhạt cho chữ nhỏ */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+
+/* 2. KHUNG GIỚI THIỆU (INTRO CARD) */
+.intro-card {
+    /* Đổi nền trắng thành nền xanh tối để hợp với màu vàng */
+    background-color: #052626 !important; 
+    border: 2px solid #FFD700;
+    /* Hiệu ứng bóng phát sáng bao quanh khung */
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4); 
+    color: white; /* Màu chữ cơ bản */
+}
+
+.intro-card h2 {
+    color: #FFD700 !important;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    padding-bottom: 10px;
+}
+
+.intro-card p, 
+.intro-card li {
+    color: #FFF8E1 !important; /* Màu trắng ngà */
+}
+
+
+/* 3. CÁC KHUNG DỊCH VỤ TÂM LINH (SERVICE CARDS) */
+.service-card {
+    /* Nền tối */
+    background-color: #0f3d3e !important; 
+    /* Viền vàng */
+    border: 1px solid #FFD700;
+    /* Bóng phát sáng nhẹ */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+/* Khi di chuột vào thì sáng rực lên */
+.service-card:hover {
+    transform: translateY(-10px); /* Bay lên cao chút */
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8); /* Sáng rực rỡ */
+    border-color: #fff; /* Viền chuyển trắng sáng */
+}
+
+/* Chữ tiêu đề dịch vụ */
+.service-card h4 {
+    color: #FFD700 !important;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+    font-size: 1.3rem;
+}
+
+/* Chữ nội dung bên dưới */
+.service-card p {
+    color: #e0e0e0 !important;
+}
+
+/* Sửa lại cái icon tròn cho hợp tông màu vàng */
+.s-icon-circle {
+    background-color: #000 !important; /* Nền đen */
+    border: 2px solid #FFD700 !important; /* Viền vàng */
+}
+.s-icon-circle i {
+    color: #FFD700 !important; /* Icon màu vàng */
+    text-shadow: 0 0 10px #FFD700;
+}
+
+/* Đường link 'Tìm hiểu thêm' */
+.s-link {
+    color: #FFD700 !important;
+    text-decoration: underline;
+}
+/* --- CHỈNH TOÀN BỘ CHỮ Ở ẢNH BÌA SANG MÀU VÀNG --- */
+
+/* Chọn tất cả các dòng chữ trong khung Hero */
+.hero-text .top-caption,   /* Dòng: Phục vụ tận tâm... */
+.hero-text h1,             /* Dòng: SẮM LỄ... */
+.hero-text .highlight,     /* Dòng: ĐỦ ĐẦY... */
+.hero-text .sub-caption {  /* Dòng: Chuyên sớ điệp... */
+    
+    color: #FFD700 !important;  /* Chuyển sang màu Vàng Gold chuẩn */
+    
+    /* Thêm hiệu ứng phát sáng mờ ảo xung quanh chữ để nhìn cho sang */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6); 
+    
+    /* Đảm bảo độ đậm rõ nét */
+    font-weight: bold; 
+}
